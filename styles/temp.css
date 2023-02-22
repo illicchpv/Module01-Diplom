@@ -120,3 +120,15 @@ element.style {
   width: auto;
   display: inline-block;
 }
+
+
+/* ============== */
+/* @media (max-width: 800px) */
+.girl {
+  height: 337.906px; /* 44vw; */
+  margin-left: 24vw;
+  /* margin-top: 14vw; */
+  bottom: -4px;
+  top: auto;
+}
+
