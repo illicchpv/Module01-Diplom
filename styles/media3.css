@@ -87,10 +87,10 @@
     width: 100%;
   }         */
   .banner-subblock-text a {
-    padding: 20px 15px;
+    padding: 20px 12px;
     font-size: 14px;
   }
-
+  
   .girl {
     left: 60px;
   }
@@ -164,8 +164,11 @@ bottom: 11px; */
 /* 481px — 768px: планшеты; */
 @media (max-width: 640px) {
 
-.banner-content-block h1 {
-    margin-bottom: 50px;
+  .banner-content-block h1 {
+    margin-bottom: 55px;
+  }  
+  .banner-content-block h3 {
+    margin-bottom: 10px;
   }  
   .girl2 {
     /* right: -76px; */
