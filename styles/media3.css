@@ -163,8 +163,12 @@ bottom: 11px; */
 
 /* 481px — 768px: планшеты; */
 @media (max-width: 640px) {
+
+.banner-content-block h1 {
+    margin-bottom: 50px;
+  }  
   .girl2 {
-    right: -76px;
+    /* right: -76px; */
     bottom: 3px;
   }
 }
