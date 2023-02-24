@@ -25,6 +25,9 @@ h1, h3{
 	
   -background-color: red;
 }
+.sp2{
+  display: none;
+}
 
 .yb-button{
   display: inline-block;
