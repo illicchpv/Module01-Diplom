@@ -1,0 +1,147 @@
+/* index.events.css
+events-wraper 
+  events-title 
+  event-items-block 
+    event-item-gradient
+      event-item  event-item_NNN...
+        event-info-block 
+          event-time 
+          event-name 
+            sp-br
+        event-type 
+
+*/
+.events-wraper{
+  margin-top: 160px;
+  /* background-color: cadetblue; */
+}
+.events-title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: #2B3541;
+}
+.event-items-block {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 11px 20px;
+
+  /* background-color: rgb(63, 167, 72); */
+}
+.event-item{
+  width: 367px; height: 600px;
+  position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* events items array */
+.event-item_1{
+  background-image: url(../images/events/maraphon.png);
+}
+.event-item_2{
+  background-image: url(../images/events/Vebinar1.png);
+}
+.event-item_3{
+  background-image: url(../images/events/Vebinar2.png);
+}
+/* .event-item_3xxx{
+  background-image:url(../images/events/Vebinar2xxx.png);
+  display: none;
+} */
+
+.event-item-gradient{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient( 180deg, rgb(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100% );
+  opacity: 0;
+  transition: all 0.3s;
+}
+.event-item-gradient:hover{
+  opacity: 1;
+}
+
+.event-info-block{
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #2B3541;
+  /* background-color: rgb(139, 167, 63); */
+}
+
+.event-time {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  opacity: 0.6;
+}
+.event-name {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 125%;
+  display: inline-block;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+.sp-br{
+  display: inline-block;
+  width: 100%;
+}
+
+.event-im_in {
+  margin-top: 40px;
+  display: inline-block;
+  padding: 20px 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  background: #2B3541;
+  box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
+  color: #FBF138;
+  visibility: hidden;
+}
+.event-item:hover .event-im_in{
+  visibility: visible;
+}
+
+.event-add{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  display: -none;
+}
+
+.event-add-button{
+  background: #FBF138;
+  text-align: center;
+}
+.event-type {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+.event-type:hover::after{
+  content: "записаться";
+  font-size: 14px;
+  font-weight: 700;
+}
+/* event types */
+.event-type_1::after{
+  content: "марафон";
+}
+.event-type_2::after{
+  content: "вебинар";
+}
