@@ -28,9 +28,6 @@
     width: 10%;
     height: 310px;
   }
-  .event-item_3{
-    height: 360px;
-  }
 }
 
 /* 481px — 768px: планшеты; */
@@ -45,6 +42,7 @@
     background-image:url(../images/events/Vebinar2_2.png);
   }
   .event-item_3{
+    height: 360px;
     flex-basis: 100%;
     background-image:url(../images/events/Vebinar2xxx.png);
     background-position: right;
