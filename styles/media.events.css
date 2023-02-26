@@ -32,6 +32,12 @@
 
 /* 481px — 768px: планшеты; */
 @media (max-width: 768px) {
+  .events-wraper {
+    margin-top: 102px;
+  }  
+  .events-title{
+    font-size: 26px;
+  }
   .event-items-block{
     flex-wrap: wrap;
   }

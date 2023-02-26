@@ -49,6 +49,7 @@
   <link rel="stylesheet" href="styles/index2.css">
   <link rel="stylesheet" href="styles/index.events.css">
   <link rel="stylesheet" href="styles/index.schedule.css">
+  <link rel="stylesheet" href="styles/index.subscribe.css">
 
   <link rel="stylesheet" href="styles/media.css">
   <!-- <link rel="stylesheet" href="styles/media2.css"> -->
@@ -133,7 +134,7 @@
     </div>
     <!-- events -->
     <div class="container" style="-display: none;">
-      <div class="events-wraper">
+      <section class="events-wraper">
         <div class="events-title">Ближайшие события</div>
         <div class="event-items-block">
 
@@ -186,12 +187,12 @@
           </div>
 
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- schedule -->
     <div class="container" style="-display: none;">
-      <div class="schedule-wraper">
+      <section class="schedule-wraper">
         <div class="schedule-title-block">
           <div class="schedule-title-item">Расписание тренировок</div>
           <div class="schedule-title-item schedule-title-item_date">22&nbsp;-&nbsp;28 июня</div>
@@ -235,6 +236,45 @@
             <div class="schedule-item-time">27 июня, 10:00</div>
             <img class="schedule-item-img" src="./images/schedule/weight.svg" alt="Комплексная разминка">
             <div class="schedule-item-name">Комплексная разминка</div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- subscribe -->
+    <div class="subscribe-back">
+      <div class="container" style="-display: none;">
+        <div class="subscribe-wraper">
+
+          <div class="subscribe-title">
+            <div class="subscribe-title-decor"></div>
+            <div class="subscribe-title-text">Подпишитесь на&nbsp;рассылку</div>
+          </div>
+
+          <div class="subscribe-form">
+
+            <div class="subscribe-form-item1">
+              <input class="subscribe-email" placeholder="Ваш email" type="email" name="clientEMail" value="">
+            </div>
+
+            <div class="subscribe-form-item2">
+              <a class="subscribe-submit yb-button" href="#">ПОДПИСАТЬСЯ</a>
+            </div>
+
+            <div class="subscribe-form-item3">
+              <div class="subscribe-form-agree">
+                <input id="agree_check_box" type="checkbox" checked="1" style="display:none;">
+                <label class="subscribe-agree-label" for="agree_check_box">
+                  <div class="agree"></div>
+                  <span>
+                    Согласен с обработкой
+                    <a href="#">персональных данных</a>
+                  </span>
+                </label>
+              </div>
+            </div>
+
           </div>
 
         </div>

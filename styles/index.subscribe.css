@@ -1,0 +1,183 @@
+/* index.subscribe.css 
+subscribe-back
+  container
+    subscribe-wraper
+      subscribe-title
+        subscribe-title-decor
+        subscribe-title-text
+      subscribe-form
+        subscribe-form-item1
+          subscribe-email
+        subscribe-form-item2
+          subscribe-submit yb-button
+        subscribe-form-item3
+          ubscribe-form-agree
+            agree_check_box
+            subscribe-agree-label
+              agree
+              span
+                Согласен с обработкой
+                a (персональных данных)
+*/
+.subscribe-back{
+  margin-top: 160px;
+  background: #F3F3F3;
+}
+.subscribe-wraper{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 617px;
+
+  /* background-color: lightskyblue; */
+}
+.subscribe-title{
+  position: relative;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  color: #2B3541;
+  
+}
+.subscribe-title-decor{
+  position: absolute;
+  width: 53px; height: 53px;
+  left: -20px; top:-26px;
+  background-color: #FBF138;
+  border-radius: 50%;
+  box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+}
+.subscribe-title-text{
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.subscribe-form{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+.subscribe-form-item1{
+  flex-basis: 372px;
+  background-color: red;
+  flex-shrink: 1;
+
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #2B3541;
+}
+.subscribe-email{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 26px;
+
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+}
+.subscribe-email:invalid{
+  border: 2px solid #AE0303;
+}
+.subscribe-email:focus{
+  border: 2px solid #FBF138;
+}
+
+
+.subscribe-submit{
+  padding: 20px 43px;
+  box-sizing: border-box;
+}
+
+.subscribe-agree-label{
+  display: flex;
+  align-items: center;
+}
+.subscribe-agree-label .agree{
+  width: 24px; height: 24px; display: inline-block;
+  background-image: url(../images/check_box_empty.svg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 5px;
+}
+.subscribe-form-agree input:checked + label .agree{
+  background-image: url(../images/check_box.svg);
+}
+
+.subscribe-agree-label a {
+  text-decoration: underline;
+  /* color: rgb(43, 53, 65, 0.5); */
+  /* line-height: 4; */
+}
+
+
+/* 768px */
+@media (max-width: 768px){
+  .subscribe-back {
+    margin-top: 90px;
+  }  
+  .subscribe-wraper{
+    padding-top: 57px;
+    width: 340px;
+    padding-bottom: 40px;
+  }
+  .subscribe-form {
+    gap: 10px;
+  }  
+  .subscribe-form-item2{
+    order: 3;
+  }
+  .subscribe-form-item1{
+    flex-basis:100%;
+  }
+  .subscribe-form-item2{
+    flex-basis:100%;
+  }
+  .subscribe-submit{
+    width: 100%;
+  }
+  .subscribe-title-text{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .subscribe-title-decor{
+    position: absolute;
+    width: 31px; height: 31px;
+    left: 54px;    top: -12px;
+    background-color: #FBF138;
+    border-radius: 50%;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+  }
+
+  .subscribe-form-item3 span{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 150%;
+    opacity: 0.5;    
+  }
+  .subscribe-form-item2{
+    margin-top: 30px;
+  }
+}
+/* 360px */
+@media (max-width: 360px){
+  .subscribe-back {
+    margin-top: 80px;
+  }  
+  .subscribe-wraper{
+    padding-top: 57px;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .subscribe-title-decor{
+    left: calc( 54px - (360px - 100vw)/2.1);
+  }
+  
+}
