@@ -211,18 +211,18 @@ events-wraper
     margin-left: 27px;
     color: #2B3541;
     /* background-color: rgb(139, 167, 63); */
-}
-.event-time {
-  font-size: 12px;
-}
-.event-name {
-  margin-top: 16px;
-  font-size: 16px;
-}
-.event-type {
-  padding: 7px 16px;
-  font-size: 12px;
-}  
+  }
+  .event-time {
+    font-size: 12px;
+  }
+  .event-name {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .event-type {
+    padding: 7px 16px;
+    font-size: 12px;
+  }  
 }
 
 /* 320px — 480px: мобильные устройства; */

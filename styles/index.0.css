@@ -1,7 +1,7 @@
 /* index.0.css */
 /* common */
 :root{
-  --trt: 0.7s;
+  --trt: 0.5s;
 }
 /* var(--trt) */
 *{
