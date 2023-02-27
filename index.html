@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og:http://ogp.me/ns#">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow" />
 
-  <!-- Open Graph Generated: a.pr-cy.ru https://pr-cy.ru/tools/open-graph-generator/ -->
+  <!-- Open Graph Generated: a.pr-cy.ru https://pr-cy.ru/tools/open-graph-generator/ 
+      
+      twitter:card ??? 
+
+      <html lang="{lang}" prefix="og: http://ogp.me/ns#"> // ruogp.me
+        <head>
+          ...
+          <meta property="og:type" content="website">
+          !!-- "og:type" can be omitted for 'website' (is default), required for other types: http://ogp.me/#types --!
+          <meta property="og:url" content="https://example.com">
+          <meta property="og:title" content="...">
+          <meta property="og:description" content="...">
+          <meta property="og:image" content="https://example.com/path/to/image.png">
+          <meta property="og:image:type" content="image/png">
+          <meta property="og:image:alt" content="...">
+          <meta property="og:image:width" content="...">
+          <meta property="og:image:height" content="...">
+          <meta property="og:site_name" content="...">
+        </head>
+        ...
+      </html>
+-->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Module01-Diplom">
   <meta property="og:description" content="Освоение профессии безжалостный верстальщик сайтов, на живых примерах.">
   <meta property="og:url" content="https://illicchpv.github.io/Module01-Diplom/">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image" content="https://illicchpv.github.io/Module01-Diplom/images/preview.png">
   <meta property="og:image:width" content="730" />
   <meta property="og:image:height" content="530" />
   <meta property="og:site_name" content="ForAnnBlock">
   <meta property="og:locale" content="ru_RU">
-
-
+  <meta property="twitter:card" content="summary_large_image" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -45,17 +68,13 @@
   <title>Module01-Diplom</title>
 
   <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/index.css">
-  <link rel="stylesheet" href="styles/index2.css">
-  <link rel="stylesheet" href="styles/index.events.css">
-  <link rel="stylesheet" href="styles/index.schedule.css">
-  <link rel="stylesheet" href="styles/index.subscribe.css">
-  <link rel="stylesheet" href="styles/index.about.css">
-
-  <link rel="stylesheet" href="styles/media.css">
-  <!-- <link rel="stylesheet" href="styles/media2.css"> -->
-  <link rel="stylesheet" href="styles/media3.css">
-  <link rel="stylesheet" href="styles/media.events.css">
+  <link rel="stylesheet" href="styles/index.0.css">
+  <link rel="stylesheet" href="styles/index.1banner.css">
+  <link rel="stylesheet" href="styles/index.2events.css">
+  <link rel="stylesheet" href="styles/index.3schedule.css">
+  <link rel="stylesheet" href="styles/index.4subscribe.css">
+  <link rel="stylesheet" href="styles/index.5about.css">
+  <link rel="stylesheet" href="styles/index.6footer.css">
 
 </head>
 
@@ -269,7 +288,7 @@
                 <label class="subscribe-agree-label" for="agree_check_box">
                   <div class="agree"></div>
                   <span>
-                    Согласен с обработкой
+                    <span>Согласен с обработкой</span>
                     <a href="javascript:void(0)">персональных данных</a>
                   </span>
                 </label>

@@ -124,10 +124,19 @@ subscribe-back
   background-image: url(../images/check_box.svg);
 }
 
+.subscribe-agree-label span span{
+  opacity: 0.5;
+
+}
 .subscribe-agree-label a {
   text-decoration: underline;
-  /* color: rgb(43, 53, 65, 0.5); */
-  /* line-height: 4; */
+  color: #2B3541;
+  opacity: 0.5;
+}
+.subscribe-agree-label a:hover{
+  opacity: 1;
+  color: #2B3541;
+  opacity: 1;
 }
 
 

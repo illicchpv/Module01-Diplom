@@ -66,7 +66,7 @@ about-wraper
   height: 100%;
   background: linear-gradient( 180deg, rgb(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100% );
   opacity: 0;
-  transition: all 0.3s;
+  transition: all var(--trt);
 }
 .about-visual:hover .event-item-gradient2{
   opacity: 1;
