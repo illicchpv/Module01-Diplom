@@ -89,7 +89,7 @@
       <div class="header">
 
         <div class="header-item">
-          <a class="header-logo" href="#"></a>
+          <a class="header-logo" href="#about" onclick="smoothScroll(event)"></a>
           <button class="header-burger" onclick="openModal()"></button>
         </div>
         <!-- <div class="header-item">
@@ -103,9 +103,9 @@
         <div class="header-item header-item-nav">
           <nav>
             <ul class="header-nav">
-              <li><a href="javascript:void(0)" onclick="smoothScroll('#events')">Мероприятия</a></li>
-              <li><a href="javascript:void(0)" onclick="smoothScroll('#schedule')" class="active">Расписание</a></li>
-              <li><a href="javascript:void(0)" onclick="smoothScroll('#about')">О&nbsp;компании</a></li>
+              <li><a href="#events" onclick="smoothScroll(event)">Мероприятия</a></li>
+              <li><a href="#schedule" onclick="smoothScroll(event)" class="active">Расписание</a></li>
+              <li><a href="#about" onclick="smoothScroll(event)">О&nbsp;компании</a></li>
             </ul>
           </nav>
         </div>
@@ -137,14 +137,14 @@
                   в области спортивной <nobr>физиологии и <span class="sp1">нутрициологии</span></nobr>
                   <span class="sp2">нутрициологии</span>
                 </p>
-                <a class="yb-button" href="javascript:void(0)" 
+                <a class="yb-button" href="" 
                     onclick="smoothScroll('#about')">Узнать подробнее</a>
               </div>
             </div>
 
             <img class="girl" src="images/clearGirl1x.png" alt="быстрее на тренировку">
 
-            <a href="#"><img class="arrow" src="images/arrow.svg" alt="вниз"></a>
+            <a href="#events" onclick="smoothScroll(event)"><img class="arrow" src="images/arrow.svg" alt="вниз"></a>
           </div>
           <div class="banner-visual">
             <div class="ybackground"></div>
@@ -277,11 +277,11 @@
           <div class="subscribe-form">
 
             <div class="subscribe-form-item1">
-              <input id="subscribe-email" class="subscribe-email" placeholder="Ваш email" type="email" name="clientEMail" value="">
+              <input id="subscribe-email" class="subscribe-email" placeholder="Ваш email" type="email" name="clientEMail" value="" tabindex="1">
             </div>
 
             <div class="subscribe-form-item2">
-              <a class="subscribe-submit yb-button" href="javascript:void(0)">ПОДПИСАТЬСЯ</a>
+              <a class="subscribe-submit yb-button" href="#subscribe" onclick="smoothScroll(event,'subscribe-email')">ПОДПИСАТЬСЯ</a>
             </div>
 
             <div class="subscribe-form-item3">
@@ -316,8 +316,9 @@
               с нами и вы сами увидите, что мы проводим
               не только онлайн-тренировки.
             </div>
-            <a class="yb-button about-title-subscribe" href="javascript:void(0)"
-                onclick="smoothScroll('#subscribe','subscribe-email')">Записаться</a>
+            <a class="yb-button about-title-subscribe" 
+                href="#subscribe" onclick="smoothScroll(event,'subscribe-email')"
+                >Записаться</a>
           </div>
           <div class="about-visual">
             <!-- backgroud image -->
@@ -386,7 +387,7 @@
         <div class="footer-copyright">© 2022, Все права защищены</div>
         <div class="footer-madeby">
           <span>Сделано в рамках курса учебной платформы </span>
-          <a href="#">Annblok</a>
+          <a href="javascript:void(0)">Annblok</a>
         </div>
       </div>
     </div>
@@ -432,12 +433,15 @@
       document.getElementById("modal-shadow").style.display = "none";
       document.body.style.paddingRight = 0;
     }
-    function smoothScroll(ref,focusId){
+    function smoothScroll(e,focusId){
+      e.preventDefault();
+      const ref = e.target.getAttribute("href");
       document.querySelector(ref).scrollIntoView({behavior: "smooth"});
+      history.pushState({}, null, ref);
       if(focusId)
         setTimeout(function(focusId){
-          document.getElementById(focusId).focus()
-        }, 500, focusId); 
+            document.getElementById(focusId).focus();
+          }, 500, focusId); 
     }
   </script>
 </body>
