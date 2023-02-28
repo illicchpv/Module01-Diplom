@@ -39,6 +39,22 @@ events-wraper
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.event-item:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
+  opacity: 0;
+  transition: all var(--trt);
+}
+.event-item:hover:after {
+  opacity: 1;
+}
+
 /* events items array */
 .event-item_1{
   background-image: url(../images/events/maraphon.png);
@@ -49,28 +65,14 @@ events-wraper
 .event-item_3{
   background-image: url(../images/events/Vebinar2.png);
 }
-/* .event-item_3xxx{
-  background-image:url(../images/events/Vebinar2xxx.png);
-  display: none;
-} */
 
 .event-item-gradient{
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(251, 241, 56, 0.3), rgba(253, 249, 182, 0) 0%);
+  background: linear-gradient(180deg, rgba(251, 241, 56, .3) 0%, rgba(253, 249, 182, 0) 100%);
+  z-index: 1;
+  position: relative;
   transition: all var(--trt);
-/* background-color: red; */
-
-  /* position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient( 180deg, rgb(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100% );
-  opacity: 0;
-  transition: all var(--trt);   */
-}
-.event-item-gradient:hover{
-  opacity: 1;
-  background: linear-gradient( 180deg, rgb(251, 241, 56, 0.3) 0%, rgba(253, 249, 182, 0) 100% );
 }
 
 .event-info-block{
@@ -114,10 +116,10 @@ events-wraper
   background: #2B3541;
   box-shadow: 0px 13px 24px rgba(43, 53, 65, 0.2);
   color: #FBF138;
-  visibility: hidden;
+  opacity: 0;
 }
 .event-item:hover .event-im_in{
-  visibility: visible;
+  opacity: 1;
 }
 
 .event-add{
