@@ -24,8 +24,11 @@ schedule-wraper
   justify-content: space-between;
   align-items: center;
 }
+.schedule-title-block .schedule-title-item:first-child{
+  flex-basis: 40%;
+}
 .schedule-title-item{
-  width: 30%;
+  /* width: 30%; */
 }
 
 .schedule-block{
@@ -130,6 +133,10 @@ schedule-wraper
     font-size: 16px;
     height: calc((224px*3) + 40px + 2px);
   }
+  .schedule-title-block .schedule-title-item:first-child{
+    flex-basis: content;
+  }
+  
   .schedule-item {
     height: 224px;
     width: calc((100%/2) - 15px );
