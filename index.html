@@ -137,8 +137,7 @@
                   в области спортивной <nobr>физиологии и <span class="sp1">нутрициологии</span></nobr>
                   <span class="sp2">нутрициологии</span>
                 </p>
-                <button class="yb-button" id="more" style="pointer-events:none;">Узнать подробнее</button>
-                <!-- <br><br><br><br><a class="yb-button" href="" onclick="smoothScroll('#about')">Узнать подробнее</a> -->
+                <a class="yb-button" id="a-more" href="#about" onclick="smoothScroll(event)">Узнать подробнее</a>
               </div>
             </div>
 
@@ -427,16 +426,14 @@
       document.body.parentElement.classList.add("for-modal");
       document.getElementById("modal").style.top = "0px";
       document.getElementById("modal-shadow").style.display = "block";
-      document.querySelector(".banner-subblock-text button").setAttribute("pointer-events", "none");
-      document.getElementById("more").classList.add("disabled");
+      document.getElementById("a-more").classList.add("disabled");
     }
     function closeModal() {
       document.body.style.paddingRight = 0;
       document.body.parentElement.classList.remove("for-modal");
       document.getElementById("modal").style.top = "-1400px";
       document.getElementById("modal-shadow").style.display = "none";
-      document.querySelector(".banner-subblock-text button").setAttribute("pointer-events", "");
-      document.getElementById("more").classList.remove("disabled");
+      document.getElementById("a-more").classList.remove("disabled");
     }
     // for navigation
     function smoothScroll(e, focusId) {
