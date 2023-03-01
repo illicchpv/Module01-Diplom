@@ -14,7 +14,7 @@ about-wraper
 
 */
 .about-wraper{
-  margin-top: 160px;
+  margin-top: 152px;
   max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
@@ -98,8 +98,8 @@ about-wraper
 
 /* 768 */
 @media (max-width: 768px){
-  .about-wraper{
-    margin-top: 95px;
+  .about-wraper {
+    margin-top: 101px;
   }
   .about-title-block{
     gap: 36px;
@@ -118,9 +118,9 @@ about-wraper
   .about-title-subscribe{
     font-size: 16px;
   }
-  .about-visual{
+  .about-visual {
     height: auto;
-    height: 250px;
+    height: 230px;
   }
 
   .about-infos-block{
@@ -174,8 +174,11 @@ about-wraper
     flex-shrink: 0;
   }
   .about-infos-block{
-    margin-top: 60px;
-  }
+    margin-top: 80px;
+    display: flex;
+    gap: 26px;
+    /* background-color: gold; */
+  }   
   .about-info-title{
     font-size: 16px;
     line-height: 120%;

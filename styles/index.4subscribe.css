@@ -101,6 +101,9 @@ subscribe-back
 .subscribe-email:focus{
   border: 2px solid #FBF138;
 }
+#agree_check_box{
+  display: none;
+}
 
 
 .subscribe-submit{
@@ -145,7 +148,8 @@ subscribe-back
     margin-top: 90px;
   }  
   .subscribe-wraper{
-    padding-top: 57px;
+    padding-top: 54px;
+    /* padding-left: 38px; */
     width: 340px;
     padding-bottom: 40px;
   }
@@ -155,9 +159,10 @@ subscribe-back
   .subscribe-form-item2{
     order: 3;
   }
-  .subscribe-form-item1{
-    flex-basis:100%;
-  }
+  .subscribe-form-item1 {
+    margin-top: 14px;
+    flex-basis: 100%;
+  }  
   .subscribe-form-item2{
     flex-basis:100%;
   }
@@ -215,5 +220,8 @@ subscribe-back
   .subscribe-title-text::before {
     left: -15px;    top: -12px;
   }
-
+  .subscribe-form-item3{
+    margin-top: 0px;
+  }
+  
 }

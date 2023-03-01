@@ -1,7 +1,7 @@
 /* index.footer.css 
 */
 .footer-back {
-  margin-top: 170px;
+  margin-top: 155px;
   height: 149px;
   background: #F3F3F3;
 }
@@ -163,12 +163,25 @@
 }
 /* 768px */
 @media (max-width: 768px){
+  .footer-back {
+    margin-top: 100px;
+    /* height: 149px; */
+    background: #F3F3F3;
+    height: auto;
+  }
 }
 /* 360px */
 @media (max-width: 450px){
+  .footer-back {
+    height: auto;
+  }
+
   .footer{
     flex-wrap: wrap;
   }
+  .footer .header-logo {
+    width: 97px;    height: 30px;
+  }  
   .footer-menu-logo{
     /* flex-basis: 100%; */
     width: 100%;

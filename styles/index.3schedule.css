@@ -22,13 +22,17 @@ schedule-wraper
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
 }
 .schedule-title-block .schedule-title-item:first-child{
   flex-basis: 40%;
 }
 .schedule-title-item{
   /* width: 30%; */
+}
+
+.schedule-title-item_date{
+  font-size: 28px;
 }
 
 .schedule-block{
@@ -156,10 +160,10 @@ schedule-wraper
     font-size: 16px;
     height: calc((224px*3) + 40px + 2px);
   }
-  .schedule-title-block .schedule-title-item:first-child{
-    flex-basis: content;
-  }
-  
+  .schedule-title-block .schedule-title-item:first-child {
+    /* flex-basis: content; */
+    flex-basis: 45%;
+  }  
   .schedule-item {
     height: 224px;
     width: calc((100%/2) - 15px );
@@ -181,6 +185,7 @@ schedule-wraper
     font-size: 26px;
   }
   .schedule-title-item_date{
+    font-size: 18px;
     opacity: 0.7;
   }
 
@@ -200,9 +205,10 @@ schedule-wraper
 
 /* 360px */
 @media (max-width: 360px){
-  .schedule-block{
+  .schedule-block {
     height: auto;
-  }
+    margin-top: 14px;
+  }  
   .schedule-item {
     height: 114px;
     width: 100%;

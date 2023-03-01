@@ -137,25 +137,25 @@
                   в области спортивной <nobr>физиологии и <span class="sp1">нутрициологии</span></nobr>
                   <span class="sp2">нутрициологии</span>
                 </p>
-                <a class="yb-button" href="" 
-                    onclick="smoothScroll('#about')">Узнать подробнее</a>
+                <button class="yb-button" id="more" style="pointer-events:none;">Узнать подробнее</button>
+                <!-- <br><br><br><br><a class="yb-button" href="" onclick="smoothScroll('#about')">Узнать подробнее</a> -->
               </div>
             </div>
 
-            <img class="girl" src="images/clearGirl1x.png" alt="быстрее на тренировку">
+            <img class="girl" src="images/clearGirl@1x.png" alt="быстрее на тренировку">
 
             <a href="#events" onclick="smoothScroll(event)"><img class="arrow" src="images/arrow.svg" alt="вниз"></a>
           </div>
           <div class="banner-visual">
             <div class="ybackground"></div>
-            <img class="girl2" src="images/clearGirl1x.png" alt="быстрее на тренировку">
+            <img class="girl2" src="images/clearGirl@1x.png" alt="быстрее на тренировку">
           </div>
         </div>
       </div>
     </div>
     <!-- events -->
     <div id="events" class="container" style="-display: none;">
-      <section class="events-wraper" style="margin-top: 0px;">
+      <section class="events-wraper">
         <div class="events-title">Ближайшие события</div>
         <div class="event-items-block">
 
@@ -265,8 +265,8 @@
     </div>
 
     <!-- subscribe -->
-    <div id="subscribe" class="subscribe-back">
-      <div class="container" style="-display: none;">
+    <div id="subscribe" class="subscribe-back" style="-display: none;">
+      <div class="container">
         <div class="subscribe-wraper">
 
           <div class="subscribe-title">
@@ -277,16 +277,18 @@
           <div class="subscribe-form">
 
             <div class="subscribe-form-item1">
-              <input id="subscribe-email" class="subscribe-email" placeholder="Ваш email" type="email" name="clientEMail" value="" tabindex="1">
+              <input id="subscribe-email" class="subscribe-email" placeholder="Ваш email" type="email"
+                name="clientEMail" value="" tabindex="1">
             </div>
 
             <div class="subscribe-form-item2">
-              <a class="subscribe-submit yb-button" href="#subscribe" onclick="smoothScroll(event,'subscribe-email')">ПОДПИСАТЬСЯ</a>
+              <a class="subscribe-submit yb-button" href="#subscribe"
+                onclick="smoothScroll(event,'subscribe-email')">ПОДПИСАТЬСЯ</a>
             </div>
 
             <div class="subscribe-form-item3">
               <div class="subscribe-form-agree">
-                <input id="agree_check_box" type="checkbox" checked="1" style="display:none;">
+                <input id="agree_check_box" type="checkbox" checked="1">
                 <label class="subscribe-agree-label" for="agree_check_box">
                   <div class="agree"></div>
                   <span>
@@ -316,9 +318,8 @@
               с нами и вы сами увидите, что мы проводим
               не только онлайн-тренировки.
             </div>
-            <a class="yb-button about-title-subscribe" 
-                href="#subscribe" onclick="smoothScroll(event,'subscribe-email')"
-                >Записаться</a>
+            <a class="yb-button about-title-subscribe" href="#subscribe"
+              onclick="smoothScroll(event,'subscribe-email')">Записаться</a>
           </div>
           <div class="about-visual">
             <!-- backgroud image -->
@@ -353,7 +354,7 @@
 
   <!-- footer -->
   <footer class="footer-back" style="-display: none;">
-    <div class="container" style="-display: none;">
+    <div class="container">
       <div class="footer-wraper1">
 
         <div class="footer">
@@ -393,8 +394,8 @@
     </div>
   </footer>
 
-  <!-- modals -->
-  <div class="modal-shadow" id="modal-shadow" onclick="closeModal()">
+  <!-- modals  onclick="closeModal()" -->
+  <div class="modal-shadow" id="modal-shadow">
   </div>
 
   <div class="modal" id="modal">
@@ -419,29 +420,34 @@
   </div>
 
   <script>
-    // burger modal menu
+    // for burger modal menu
     function openModal() {
       let w = window.innerWidth - document.documentElement.clientWidth; // window.innerWidth - document.body.offsetWidth;
       document.body.style.paddingRight = w + "px";
+      document.body.parentElement.classList.add("for-modal");
       document.getElementById("modal").style.top = "0px";
-      document.body.style.overflow = "hidden";
       document.getElementById("modal-shadow").style.display = "block";
+      document.querySelector(".banner-subblock-text button").setAttribute("pointer-events", "none");
+      document.getElementById("more").classList.add("disabled");
     }
     function closeModal() {
-      document.getElementById("modal").style.top = "-1400px";
-      document.body.style.overflow = "";
-      document.getElementById("modal-shadow").style.display = "none";
       document.body.style.paddingRight = 0;
+      document.body.parentElement.classList.remove("for-modal");
+      document.getElementById("modal").style.top = "-1400px";
+      document.getElementById("modal-shadow").style.display = "none";
+      document.querySelector(".banner-subblock-text button").setAttribute("pointer-events", "");
+      document.getElementById("more").classList.remove("disabled");
     }
-    function smoothScroll(e,focusId){
+    // for navigation
+    function smoothScroll(e, focusId) {
       e.preventDefault();
       const ref = e.target.getAttribute("href");
-      document.querySelector(ref).scrollIntoView({behavior: "smooth"});
+      document.querySelector(ref).scrollIntoView({ behavior: "smooth" });
       history.pushState({}, null, ref);
-      if(focusId)
-        setTimeout(function(focusId){
-            document.getElementById(focusId).focus();
-          }, 500, focusId); 
+      if (focusId)
+        setTimeout(function (focusId) {
+          document.getElementById(focusId).focus();
+        }, 500, focusId);
     }
   </script>
 </body>

@@ -12,7 +12,7 @@ events-wraper
 
 */
 .events-wraper{
-  margin-top: 160px;
+  margin-top: 154px;
   /* background-color: cadetblue; */
 }
 .events-title{
@@ -199,24 +199,27 @@ events-wraper
 /* 481px — 768px: планшеты; */
 @media (max-width: 768px) {
   .events-wraper {
-    margin-top: 102px;
-  }  
+    margin-top: 109px;
+  }
   .events-title{
     font-size: 26px;
   }
   .event-items-block{
     flex-wrap: wrap;
   }
+  .event-items-block {
+    margin-top: 22px;
+  }  
   .event-item_1{
     background-image:url(../images/events/Vebinar1_2.png);
   }
   .event-item_2{
     background-image:url(../images/events/Vebinar2_2.png);
   }
-  .event-item_3{
-    height: 360px;
+  .event-item_3 {
+    height: 335px;
     flex-basis: 100%;
-    background-image:url(../images/events/Vebinar2xxx.png);
+    background-image: url(../images/events/Vebinar2xxx.png);
     background-position: right;
   }
   .event-type {
@@ -247,3 +250,8 @@ events-wraper
 }
 
 /* 320px — 480px: мобильные устройства; */
+@media (max-width: 360px){
+  .events-wraper {
+    margin-top: 121px;
+  }
+}
