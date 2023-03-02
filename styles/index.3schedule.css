@@ -75,6 +75,7 @@ schedule-wraper
   background: linear-gradient(180deg, rgba(251, 241, 56, .6) 0%, rgba(253, 249, 182, 0) 100%);
   opacity: 0;
   transition: all var(--trt);
+  z-index: -1;
 }
 .schedule-item:hover:after {
   opacity: 1;
