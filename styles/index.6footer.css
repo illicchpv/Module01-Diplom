@@ -220,4 +220,10 @@
   .footer-wraper2 {
     margin-top: 40px;
   }  
+
+}
+@media (max-width: 310px){
+  .footer-madeby{
+    text-align: center;
+  }
 }

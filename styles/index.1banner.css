@@ -63,7 +63,13 @@
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 0.03em;
+  color: #2B3541;
 }
+#a-more:hover{
+  background-color: #2b3541;
+  color: #fbf138;
+}
+
 
 .banner-content-block{
 

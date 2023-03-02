@@ -269,8 +269,7 @@
         <div class="subscribe-wraper">
 
           <div class="subscribe-title">
-            <!-- <div class="subscribe-title-decor"></div> -->
-            <div class="subscribe-title-text">Подпишитесь на&nbsp;рассылку</div>
+            <div class="subscribe-title-text"><span class="decore-place"></span> Подпишитесь на&nbsp;рассылку</div>
           </div>
 
           <div class="subscribe-form">
@@ -291,8 +290,8 @@
                 <label class="subscribe-agree-label" for="agree_check_box">
                   <div class="agree"></div>
                   <span>
-                    <span>Согласен с обработкой</span>
-                    <a href="javascript:void(0)">персональных данных</a>
+                    <span>Согласен с&nbsp;обработкой</span>
+                    <a href="javascript:void(0)">персональных&nbsp;данных</a>
                   </span>
                 </label>
               </div>
@@ -360,9 +359,9 @@
 
           <div class="footer-menu-logo"><a class="header-logo" href="#"></a></div>
           <div class="footer-menu-br"></div>
-          <a class="footer-menu footer-menu1" href="#">Мероприятия</a>
-          <a class="footer-menu" href="#" class="active">Расписание</a>
-          <a class="footer-menu" href="#">О&nbsp;компании</a>
+          <a class="footer-menu footer-menu1"  href="#events" onclick="smoothScroll(event)">Мероприятия</a>
+          <a class="footer-menu" class="active" href="#schedule" onclick="smoothScroll(event)">Расписание</a>
+          <a class="footer-menu" href="#about" onclick="smoothScroll(event)">О&nbsp;компании</a>
 
           <div class="header-item header-item-social">
             <span class="freefit">info@freefit.com</span>
@@ -386,8 +385,8 @@
       <div class="footer-wraper2">
         <div class="footer-copyright">© 2022, Все права защищены</div>
         <div class="footer-madeby">
-          <span>Сделано в рамках курса учебной платформы </span>
-          <a href="javascript:void(0)">Annblok</a>
+          <span>Сделано в рамках курса учебной 
+            платформы</span>&nbsp;<a href="javascript:void(0)">Annblok</a>
         </div>
       </div>
     </div>
@@ -404,10 +403,10 @@
         <button class="burger-close" onclick="closeModal()"></button>
       </div>
       <ul class="header-nav">
-        <li><a href="#">Мероприятия</a></li>
-        <li><a href="#" class="active">Расписание</a></li>
-        <li><a href="#">О&nbsp;компании</a></li>
-        <li><a href="#">Контакты</a></li>
+        <li><a href="#events" onclick="closeModal();smoothScroll(event)">Мероприятия</a></li>
+        <li><a class="active"  href="#schedule" onclick="closeModal();smoothScroll(event)">Расписание</a></li>
+        <li><a href="#about" onclick="closeModal();smoothScroll(event)">О&nbsp;компании</a></li>
+        <li><a href="#about" onclick="closeModal();smoothScroll(event)">Контакты</a></li>
       </ul>
       <div class="modal-bottom-line">
         <div class="header-item header-item-social">
