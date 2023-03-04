@@ -63,6 +63,8 @@
 */
 
 .freefit{
+  width: auto!important;
+  height: auto!important;
   position: relative;
   display: inline;
   z-index: 2;

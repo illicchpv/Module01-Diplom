@@ -88,6 +88,8 @@ events-wraper
   font-size: 18px;
   line-height: 150%;
   opacity: 0.6;
+  position: relative;
+  z-index: 1;
 }
 .event-name {
   margin-top: 20px;
@@ -97,6 +99,8 @@ events-wraper
   display: inline-block;
   width: 100%;
   /* background-color: aquamarine; */
+  position: relative;
+  z-index: 1;
 }
 .sp-br{
   display: inline-block;
