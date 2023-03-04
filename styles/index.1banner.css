@@ -86,11 +86,12 @@
   /* background: linear-gradient(#fbf138 0%, rgba(253, 249, 182, 0.45) 100%); */
   opacity: 0.2;
   box-sizing: border-box;
-  border-bottom: 40px solid white;
+  /* border-bottom: 40px solid white; */
 }
 .girl {
   position: absolute;
-  top: -12px;
+  top: 2px;
+  /* top: -12px; */
   left: 328px;
   z-index: 5;
   width: 996px;
