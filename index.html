@@ -167,7 +167,8 @@
                   Марафон
                   <span class="sp-br">выносливости</span>
                 </div>
-                <a class="event-im_in" href="javascript:void(0)">записаться</a>
+                <button class="event-im_in event-im_in_btn">записаться</button>
+                <!-- <a class="event-im_in" href="javascript:void(0)">записаться</a> -->
               </div>
 
               <img class="event-add" src="images/add.svg" alt="записаться">
@@ -183,7 +184,8 @@
                   Как стать
                   <span class="sp-br">тренером ?</span>
                 </div>
-                <a class="event-im_in" href="javascript:void(0)">записаться</a>
+                <button class="event-im_in event-im_in_btn">записаться</button>
+                <!-- <a class="event-im_in" href="javascript:void(0)">записаться</a> -->
               </div>
 
               <img class="event-add" src="images/add.svg" alt="записаться">
@@ -199,7 +201,8 @@
                   Йога, как стиль
                   <span class="sp-br">жизни</span>
                 </div>
-                <a class="event-im_in" href="javascript:void(0)">записаться</a>
+                <button class="event-im_in event-im_in_btn">записаться</button>
+                <!-- <a class="event-im_in" href="javascript:void(0)">записаться</a> -->
               </div>
 
               <img class="event-add" src="images/add.svg" alt="записаться">
@@ -437,7 +440,9 @@
     // for navigation
     function smoothScroll(e, focusId) {
       e.preventDefault();
-      const ref = e.target.getAttribute("href");
+      let ref = e.target.getAttribute("href");
+      if(ref === null)
+        ref = e.target.parentElement.getAttribute("href");
       document.querySelector(ref).scrollIntoView({ behavior: "smooth" });
       history.pushState({}, null, ref);
       if (focusId)
