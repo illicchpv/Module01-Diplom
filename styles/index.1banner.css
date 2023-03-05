@@ -10,7 +10,7 @@
   /* width: 1143px; */
   width: 676px;
   Height:852px;
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .banner-content-block {
   margin-top: 217px;
@@ -78,7 +78,7 @@
   flex-grow: 1;
   position: relative;
 
-  background-color: darkgrey;
+  /* background-color: darkgrey; */
 }
 .ybackground{
   width: 100%;
@@ -98,6 +98,9 @@
   z-index: 5;
   width: 996px;
   /* Height:852px; */
+}
+.girl_img{
+  width: 100%;
 }
 .girl2{
   display: none;
@@ -130,9 +133,16 @@
 /* 1201px и больше —  очень большие экраны, телевизоры. */
 
 @media (max-width: 1550px) {
+  :root{
+    --top:calc(-48px + var(--ky)*var(--cs));
+    --h: 852px + var(--top);
+  }  
   .girl {
     top: calc(-48px + var(--ky)*var(--cs));
     left: calc(147px + var(--kx)*var(--cs));
+  }
+  .banner-content  {
+    height: 850px + calc(-48px + var(--ky)*var(--cs));
   }
 }
 
