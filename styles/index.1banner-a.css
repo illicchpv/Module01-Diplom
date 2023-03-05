@@ -1,0 +1,317 @@
+/* index.1banner-a.css */
+.banner-a{
+  overflow: hidden;
+  display: flex;
+}
+
+.banner-a__content {
+  flex: 0 0 100%;
+  display: flex;
+}
+
+.banner-a__container {
+  max-width: 1141px;
+  padding: 0px 20px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner-a__body {
+  padding-top: 25px;
+  width: 63%;
+  z-index: 1;
+  padding-bottom: calc(24px + 16 * ((100vw - 320px) / 1140));
+}
+
+.banner-a__title {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: 0.049em;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
+  color: #2B3541;
+}
+
+.banner-a__number {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 125%;
+  margin-bottom: 0;
+  color: #2B3541;
+}
+
+.banner-a__number-big {
+  margin-right: 22px;
+}
+
+.banner-a__text {
+  max-width: 297px;
+  margin: 39px 0px 29px 98px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2B3541;
+}
+
+.banner-a__link {
+  padding: 20px 30px;
+  position: absolute;
+  background: #FBF138;
+  box-shadow: 0px 13px 24px rgb(251 241 56 / 30%);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2B3541;
+  cursor: pointer;
+  transition: all .2s ease;
+  margin-left: 98px;
+}
+
+.banner-a__link:hover {
+  color: #FBF138;
+  background: #2B3541;
+  box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+}
+
+.banner-a__image {
+  flex: 0 0 calc(50vw - (0.4 - 0.5) * 1140px);
+  transform: translate(-111%, 0px);
+}
+
+.banner-a__image img {
+  max-width: 100%;
+  margin-top: 29px;
+}
+
+.banner-a__gradient-left {
+  background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+  width: 535px;
+  height: 99.65%;
+  opacity: .2;
+  position: absolute;
+  z-index: -1;
+  margin-left: 102px;
+}
+
+.banner-a__gradient-rigt {
+  background: linear-gradient(90deg, #FDF9B6 0%, rgba(253, 249, 182, 0.7) 166.81%);
+  width: 235px;
+  height: 99.65%;
+  opacity: .2;
+  position: absolute;
+  z-index: -1;
+}
+
+.banner-a__arrow {
+  display: block;
+  position: absolute;
+  width: 52px;
+  height: 55px;
+  background-image: url(../images/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
+  bottom: 0;
+}
+
+
+
+@media(min-width: 1920px) {
+  .banner-a__gradient-rigt {
+    margin-left: 661px;
+  }
+}
+
+@media(max-width: 1919px) {
+  .banner-a__gradient-left {
+    width: calc(502px + 535 * ((100vw - 1596px) / 1919));
+  }
+
+  .banner-a__gradient-rigt {
+    right: calc(50px + 456 * ((100vw - 1596px) / 1919));
+  }
+
+  .banner-a__title {
+    font-size: calc(36px + 16 * ((100vw - 1140px) / 1920));
+  }
+}
+
+@media(max-width:1595px) {
+  .banner-a__gradient-left {
+    width: calc(426px + 54 * ((100vw - 1140px) / 1595));
+    margin-left: calc(48px + 374 * ((100vw - 1140px) / 1595));
+  }
+
+  .banner-a__gradient-rigt {
+    width: calc(175px + 148 * ((100vw - 1140px) / 1595));
+    right: calc(19px + 227 * ((100vw - 1140px) / 1595));
+  }
+
+  .banner-a__image {
+    transform: translate(-100%, 0px);
+  }
+
+}
+
+@media(max-width:1140px) {
+  .banner-a__container {
+    margin-left: calc(1px + 10 * ((100vw - 768px) / 1140));
+  }
+
+  .banner-a__body {
+    padding-top: 0px;
+    padding-bottom: calc(121px + 16 * ((100vw - 320px) / 1140));
+  }
+
+  .banner-a__title {
+    font-size: calc(24px + 16 * ((100vw - 768px) / 1140));
+    margin-left: 0;
+  }
+
+  .banner-a__number {
+    font-size: calc(26px + 16 * ((100vw - 768px) / 1140));
+    margin-left: 0;
+  }
+
+  .banner-a__text {
+    margin-left: 0;
+  }
+
+  .banner-a__link {
+    margin-left: 0;
+  }
+
+  .banner-a__gradient-left {
+    width: calc(194px + 330 * ((100vw - 768px) / 1140));
+    margin-left: calc(48px + 374 * ((100vw - 1140px) * 0.2 / 1595));
+    height: 99.3%;
+  }
+
+  .banner-a__gradient-rigt {
+    width: calc(152px + 62 * ((100vw - 768px) / 1140));
+    right: calc(114px + 108 * ((100vw - 768px) / 1140));
+    height: 99.3%;
+  }
+
+  /* .section-title {
+    font-size: calc(26px + 16 * ((100vw - 768px) / 1140));
+    letter-spacing: -0.5px;
+  }
+
+  .title__timetable {
+    font-size: calc(26px + 16 * ((100vw - 768px) / 1140));
+  }
+
+  .data {
+    font-size: calc(16px + 16 * ((100vw - 768px) / 1140));
+  } */
+
+  .banner-a__arrow {
+    -webkit-transform: scale(0.7);
+    -ms-ransform: scale(0.7);
+    transform: scale(0.7);
+    bottom: -7px;
+    left: 16px;
+  }
+}
+
+@media (max-width:1020px) {
+
+  .banner-a__image {
+    flex: 0 0 calc(50vw - (0.4 - 0.5) * 1140px);
+    transform: translate(-82%, 0px);
+  }
+
+  .banner-a__image img {
+    max-width: 81%;
+    margin-top: 100px;
+  }
+}
+
+@media(max-width: 768px) {
+  .banner-a__container {
+    margin-left: 0px;
+  }
+
+  .banner-a__image {
+    flex: 0 0 calc(50vw - (0.4 - 0.5) * 1140px);
+    transform: translate(-82%, 0px);
+  }
+
+  .banner-a__image img {
+    max-width: 81%;
+    margin-top: 100px;
+  }
+}
+
+@media(max-width:526px) {
+  .banner-a {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .banner-a__container {
+    margin-top: 50px;
+    margin-left: 0px;
+    padding: 0px;
+  }
+
+  .banner-a__body {
+    width: 100%;
+  }
+
+  .banner-a__title {
+    font-size: calc(26px + 30 * ((100vw - 360px) / 526));
+    letter-spacing: 0.02em;
+    margin-left: 0px;
+  }
+
+  .banner-a__number {
+    margin-left: 0px;
+    font-size: calc(31px + 30 * ((100vw - 360px) / 526));
+  }
+
+  .banner-a__text {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+
+  .banner-a__link {
+    width: 100%;
+    padding: 20px 0px;
+    margin-left: 0px;
+  }
+
+  .banner-a__image {
+    transform: translate(0%, 0px);
+  }
+
+  .banner-a__image img {
+    min-width: 100%;
+  }
+
+  .banner-a__arrow {
+    display: none;
+  }
+
+  .banner-a__gradient-left {
+    width: 62.65%;
+    margin-left: 0px;
+    height: 99.1%;
+  }
+
+  .banner-a__gradient-rigt {
+    width: 34.412%;
+    right: 0px;
+    height: 99.1%;
+  }
+}

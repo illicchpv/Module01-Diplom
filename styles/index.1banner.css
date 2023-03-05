@@ -8,9 +8,9 @@
 .banner-content{
   position: relative;
   /* width: 1143px; */
-  /* background-color: bisque; */
   width: 676px;
   Height:852px;
+  background-color: bisque;
 }
 .banner-content-block {
   margin-top: 217px;
@@ -77,6 +77,8 @@
 .banner-visual{
   flex-grow: 1;
   position: relative;
+
+  background-color: darkgrey;
 }
 .ybackground{
   width: 100%;

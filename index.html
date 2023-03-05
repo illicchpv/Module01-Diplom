@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <!--  prefix="og:http://ogp.me/ns#" -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,6 +70,7 @@
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/index.0.css">
+  <link rel="stylesheet" href="styles/index.1banner-a.css">
   <link rel="stylesheet" href="styles/index.1banner.css">
   <link rel="stylesheet" href="styles/index.2events.css">
   <link rel="stylesheet" href="styles/index.3schedule.css">
@@ -82,9 +84,29 @@
   <!-- 
     https://illicchpv.github.io/Module01-Diplom/ 
   -->
+  <style>
+    /* .container{ display: block!important; } */
+
+    /* .debug{ display: block!important; margin-top: 3px; }
+    .var_a{ display: none!important; }
+    .var_1{ display: block!important; } */
+
+    .debug{ display: none!important; margin-top: 3px; }
+
+    #header{display: block!important; }
+    #banner_a{display: block!important; }
+    #banner_1{display: none!important; }
+    #events{display: block!important; }
+    #schedule{display: block!important; }
+    #subscribe{display: block!important; }
+    #about{display: block!important; }
+    #footer{display: block!important; }
+
+
+</style>
 
   <!-- header -->
-  <header style="-display: none;">
+  <header id="header">
     <div class="container">
       <div class="header">
 
@@ -119,9 +141,34 @@
   </header>
 
   <!-- main -->
-  <main style="-display: none;">
+  <main>
     <!-- banner -->
-    <div class="container" style="-display: none;">
+    <!-- a variant -->
+    <div id="banner_a" class="container var_a">
+      <section class="banner-a">
+        <div class="banner-a__content">
+          <div class="banner-a__container">
+            <div class="banner-a__body">
+              <h1 class="banner-a__title">онлайн тренировки любой сложности</h1>
+              <p class="banner-a__number"><span class="banner-a__number-big">&gt;15</span>тренировок
+              <p>
+              <p class="banner-a__text">в области спортивной физиологии и нутрициологии</p>
+              <a class="banner-a__link" href="#about" onclick="smoothScroll(event)">Узнать подробнее</a>
+            </div>
+            <a class="banner-a__arrow" href="#events" onclick="smoothScroll(event)"></a>
+          </div>
+        </div>
+        <div class="banner-a__image">
+          <div class="banner-a__gradient-left"></div>
+          <div class="banner-a__gradient-rigt"></div>
+          <img src="./images/clearGirl@1x.png" alt="">
+        </div>
+      </section>
+    </div>
+    <div class="debug" style="display: block; background-color: black;height: 100px;"></div>
+
+    <!-- first variant -->
+    <div id="banner_1" class="container var_1">
       <div class="banner-wraper">
         <div class="banner">
           <div class="banner-content">
@@ -152,8 +199,10 @@
         </div>
       </div>
     </div>
+    <div class="debug" style="display: block; background-color: black;height: 100px;"></div>
+
     <!-- events -->
-    <div id="events" class="container" style="-display: none;">
+    <div id="events" class="container">
       <section class="events-wraper">
         <h2 class="events-title">Ближайшие события</h2>
         <div class="event-items-block">
@@ -215,7 +264,7 @@
     </div>
 
     <!-- schedule -->
-    <div id="schedule" class="container" style="-display: none;">
+    <div id="schedule" class="container">
       <section class="schedule-wraper">
         <div class="schedule-title-block">
           <h2 class="schedule-title-item">Расписание тренировок</h2>
@@ -267,7 +316,7 @@
     </div>
 
     <!-- subscribe -->
-    <div id="subscribe" class="subscribe-back" style="-display: none;">
+    <div id="subscribe" class="subscribe-back">
       <div class="container">
         <section class="subscribe-wraper">
 
@@ -307,7 +356,7 @@
     </div>
 
     <!-- about -->
-    <div id="about" class="container" style="-display: none;">
+    <div id="about" class="container">
       <section class="about-wraper">
 
         <div class="about-title-block">
@@ -354,7 +403,7 @@
   </main>
 
   <!-- footer -->
-  <footer class="footer-back" style="-display: none;">
+  <footer id="footer" class="footer-back">
     <div class="container">
       <div class="footer-wraper1">
 
@@ -362,7 +411,7 @@
 
           <div class="footer-menu-logo"><a class="header-logo" href="#"></a></div>
           <div class="footer-menu-br"></div>
-          <a class="footer-menu footer-menu1"  href="#events" onclick="smoothScroll(event)">Мероприятия</a>
+          <a class="footer-menu footer-menu1" href="#events" onclick="smoothScroll(event)">Мероприятия</a>
           <a class="footer-menu active" href="#schedule" onclick="smoothScroll(event)">Расписание</a>
           <a class="footer-menu" href="#about" onclick="smoothScroll(event)">О&nbsp;компании</a>
 
@@ -388,7 +437,7 @@
       <div class="footer-wraper2">
         <div class="footer-copyright">© 2022, Все права защищены</div>
         <div class="footer-madeby">
-          <span>Сделано в рамках курса учебной 
+          <span>Сделано в рамках курса учебной
             платформы</span>&nbsp;<a href="javascript:void(0)">Annblok</a>
         </div>
       </div>
@@ -407,7 +456,7 @@
       </div>
       <ul class="header-nav">
         <li><a href="#events" onclick="closeModal();smoothScroll(event)">Мероприятия</a></li>
-        <li><a class="active"  href="#schedule" onclick="closeModal();smoothScroll(event)">Расписание</a></li>
+        <li><a class="active" href="#schedule" onclick="closeModal();smoothScroll(event)">Расписание</a></li>
         <li><a href="#about" onclick="closeModal();smoothScroll(event)">О&nbsp;компании</a></li>
         <li><a href="#about" onclick="closeModal();smoothScroll(event)">Контакты</a></li>
       </ul>
@@ -419,6 +468,8 @@
       </div>
     </div>
   </div>
+
+  <div class="debug" style="display: block; background-color: black;height: 100px;"></div>
 
   <script>
     // for burger modal menu
@@ -441,7 +492,7 @@
     function smoothScroll(e, focusId) {
       e.preventDefault();
       let ref = e.target.getAttribute("href");
-      if(ref === null)
+      if (ref === null)
         ref = e.target.parentElement.getAttribute("href");
       document.querySelector(ref).scrollIntoView({ behavior: "smooth" });
       history.pushState({}, null, ref);
