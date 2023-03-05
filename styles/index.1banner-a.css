@@ -93,7 +93,8 @@
 
 .banner-a__gradient-left {
   background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
-  width: 535px;
+  /* width: 535px; */
+  width: 800px;
   height: 99.65%;
   opacity: .2;
   position: absolute;
@@ -190,7 +191,8 @@
   }
 
   .banner-a__gradient-left {
-    width: calc(194px + 330 * ((100vw - 768px) / 1140));
+    /* width: calc(194px + 330 * ((100vw - 768px) / 1140)); */
+    width: calc(294px + 330 * ((100vw - 768px) / 1140));
     margin-left: calc(48px + 374 * ((100vw - 1140px) * 0.2 / 1595));
     height: 99.3%;
   }
@@ -304,7 +306,8 @@
   }
 
   .banner-a__gradient-left {
-    width: 62.65%;
+    /* width: 62.65%; */
+    width: 100%;
     margin-left: 0px;
     height: 99.1%;
   }

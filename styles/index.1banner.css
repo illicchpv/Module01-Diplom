@@ -69,8 +69,17 @@
   background-color: #2b3541;
   color: #fbf138;
 }
+.rg{
+  position: relative;
+  width: 34%;
+  height: 100%;
+  left: 0;
+  left: 48%;
+  top:40px;
 
-
+  background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);  
+  opacity: 0.2;
+}
 .banner-content-block{
 
 }
@@ -81,9 +90,9 @@
   /* background-color: darkgrey; */
 }
 .ybackground{
-  width: 100%;
+  width: 90%;
   height: 100%;
-  background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+  /* background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%); */
   /* background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%); */
   /* background: linear-gradient(#fbf138 0%, rgba(253, 249, 182, 0.45) 100%); */
   opacity: 0.2;
@@ -98,9 +107,14 @@
   z-index: 5;
   width: 996px;
   /* Height:852px; */
+  height: inherit;
+  overflow: hidden;
 }
-.girl_img{
+.girl_img {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .girl2{
   display: none;
@@ -133,16 +147,9 @@
 /* 1201px и больше —  очень большие экраны, телевизоры. */
 
 @media (max-width: 1550px) {
-  :root{
-    --top:calc(-48px + var(--ky)*var(--cs));
-    --h: 852px + var(--top);
-  }  
   .girl {
     top: calc(-48px + var(--ky)*var(--cs));
     left: calc(147px + var(--kx)*var(--cs));
-  }
-  .banner-content  {
-    height: 850px + calc(-48px + var(--ky)*var(--cs));
   }
 }
 
@@ -227,7 +234,11 @@
     height: 337.906px;
     /* z-index: 20; */
   }
-
+  .ybackground{
+    width: 100%;
+    background: linear-gradient(90deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 145.23%);
+  }
+  
   .banner-content {
     position: relative;
     /* width: 1143px; */
@@ -291,7 +302,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 545px) {
   .banner {
     flex-wrap: wrap;
     width: 100%;
@@ -349,6 +360,11 @@
     height: auto;
     left: 0;
     top: 40px;
+  }
+  .ybackground{
+    position: relative;
+    top: 30%;
+    height: calc(100% - 30% + 40px);
   }
 }
 /* 320px — 480px: мобильные устройства; */
