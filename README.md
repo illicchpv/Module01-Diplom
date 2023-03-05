@@ -110,3 +110,23 @@ https://c2n.me/4hT9cNm
 + И осталось градиент вернуть
 	.event-item-gradient{
 
+//-----------------------------------------------
+  + 1. постарайся заполнить пустоту справа .
+    @media 545
+    .banner-content-block h1 {
+        text-align: center;
+    .banner-content-block h3 {
+        margin-left: 5vw;
+    .banner-subblock-text p {
+        margin-left: calc(3vw + 35px);
+        max-width: 100%;
+        text-align: right;
+
+ + 2. между рукой и кнопкой, сделай расстояние, на мобилке ты его сделал, добавь сюда.
+
+ + Немного уменьши заголовок, сильно близко он к изображению
+	@media (max-width: 1300px)
+		.banner-content-block h1 {
+    		font-size: 45px;
+
+ + Еще валидатор немного ругается, в остальном все отлично

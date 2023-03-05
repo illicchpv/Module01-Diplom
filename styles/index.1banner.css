@@ -49,6 +49,10 @@
   max-width: 297px;
   margin-bottom: 36px;
 }
+.banner-subblock-text p .sp3 {
+  display: none;
+}
+
 .disabled{
   pointer-events:none;
 }
@@ -150,6 +154,11 @@
   .girl {
     top: calc(-48px + var(--ky)*var(--cs));
     left: calc(147px + var(--kx)*var(--cs));
+  }
+}
+@media (max-width: 1300px){
+  .banner-content-block h1{
+    font-size: 45px;
   }
 }
 
@@ -323,6 +332,7 @@
     letter-spacing: -1px;
     /* width: 350px; */
     width: 100%;
+    text-align: center;
   }
 
   .banner-subblock-text {
@@ -331,16 +341,27 @@
   }
 
   .banner-content-block h3 {
-    margin-left: 0px;
+    margin-left: 5vw;
   }
 
-  .banner-subblock-text p .sp1 {
+  .banner-subblock-text p {
+    margin-left: calc(3vw + 35px);
+    max-width: 100%;
+    text-align: right;
+  }
+  .banner-subblock-text p .sp12 {
+    display: none;
+  }
+  /* .banner-subblock-text p .sp1 {
+    display: inline;
+  }
+  .banner-subblock-text p .sp2 {
+    display: none;
+  } */
+  .banner-subblock-text p .sp3 {
     display: inline;
   }
 
-  .banner-subblock-text p .sp2 {
-    display: none;
-  }
 
   #a-more{
     width: 100%;
@@ -352,8 +373,8 @@
     flex-basis: 100%;
     width: 100%;
     height: 82vw;
-    /* height: 326px;  326px; */
-  }
+    margin-top: 36px;
+  }  
 
   .girl2 {
     width: 100%;
