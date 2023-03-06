@@ -328,11 +328,12 @@
   }
 
   .banner-content-block h1 {
-    font-size: 25px;
-    letter-spacing: -1px;
+    font-size: 35px;
+    font-size: calc(26px + (100vw - 360px) * ((35 - 26) / (545 - 360)));
+    letter-spacing: 0.0em;
     /* width: 350px; */
     width: 100%;
-    text-align: center;
+    text-align: left;
   }
 
   .banner-subblock-text {
@@ -341,13 +342,12 @@
   }
 
   .banner-content-block h3 {
-    margin-left: 5vw;
+    margin-left: 0;
   }
 
   .banner-subblock-text p {
-    margin-left: calc(3vw + 35px);
+    margin-left: 0;
     max-width: 100%;
-    text-align: right;
   }
   .banner-subblock-text p .sp12 {
     display: none;
