@@ -389,11 +389,12 @@
   }
 }
 /* 320px — 480px: мобильные устройства; */
-  @media (max-width: 360px) {
+@media (max-width: 360px) {
     .banner-visual {
       margin-top: 78px;
-  }  
-  .girl2 {
-    top: 0px;
-  }
+      overflow: hidden;
+    }  
+    .girl2 {
+      top: 0px;
+    }
 }

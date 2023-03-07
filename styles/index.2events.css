@@ -270,6 +270,6 @@ events-wraper
 /* 320px — 480px: мобильные устройства; */
 @media (max-width: 360px){
   .events-wraper {
-    margin-top: 121px;
+    margin-top: 71px;
   }
 }
