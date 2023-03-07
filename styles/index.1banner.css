@@ -380,7 +380,7 @@
     width: 100%;
     height: auto;
     left: 0;
-    top: 40px;
+    top: 45px;
   }
   .ybackground{
     position: relative;
@@ -395,6 +395,6 @@
       overflow: hidden;
     }  
     .girl2 {
-      top: 0px;
+      top: 5px;
     }
 }
